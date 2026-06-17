@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER & NAV -->
+  <header>
+    <nav>
+      <div class="logo">KRISH YADAV</div>
+
+      <!-- HAMBURGER BUTTON (visible on mobile only) -->
+      <!-- popovertarget links this button to the menu below — no JS needed! -->
+      <button class="hamburger" popovertarget="mobile-menu" aria-label="Open navigation menu">
+        ☰
+      </button>
+
+      <!-- DESKTOP NAV LINKS (hidden on mobile) -->
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- MOBILE POPOVER MENU -->
+    <!-- popover attribute makes this work with the button above — no JS! -->
+    <div id="mobile-menu" popover>
+      <button class="close-btn" popovertarget="mobile-menu" popovertargetaction="hide" aria-label="Close menu">✕</button>
+      <ul>
+        <li><a href="#about" popovertarget="mobile-menu" popovertargetaction="hide">About</a></li>
+        <li><a href="#skills" popovertarget="mobile-menu" popovertargetaction="hide">Skills</a></li>
+        <li><a href="#projects" popovertarget="mobile-menu" popovertargetaction="hide">Projects</a></li>
+        <li><a href="#contact" popovertarget="mobile-menu" popovertargetaction="hide">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <h1>Hi, I'm <span>Krish yadav</span></h1>
+      <p>Frontend Developer | DecodeLabs Batch 2026</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a frontend developer currently training at DecodeLabs.
+        I love building clean and readable websites using HTML and CSS.
+        I focus on writing proper semantic code that works for everyone.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="card">HTML5</div>
+        <div class="card">CSS3</div>
+        <div class="card">Flexbox</div>
+        <div class="card">CSS Grid</div>
+        <div class="card">Responsive Design</div>
+        <div class="card">Accessibility</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <h3>Project One</h3>
+          <p>A static portfolio page built with pure HTML and CSS using semantic tags and a clean layout.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Project Two</h3>
+          <p>A blog layout using CSS Grid with proper heading hierarchy and readable typography.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS Grid</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Project Three</h3>
+          <p>A product landing page with a hero section and feature cards using Flexbox.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">Flexbox</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out!</p>
+    <address>
+      <a href="mailto:your@email.com">krishyadav1423@email.com</a>
+    </address>
+    <nav aria-label="Social links">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </nav>
+    <small>© 2026 Krish yadav</small>
+  </footer>
+
+</body>
+</html>
