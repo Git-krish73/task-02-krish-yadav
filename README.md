@@ -6,7 +6,7 @@ This is a frontend web development project built using:
 - JavaScript
 
 ## Live Demo
-
+https://git-krish73.github.io/task-02-krish-yadav/
 
 ## Features
 - Responsive design
